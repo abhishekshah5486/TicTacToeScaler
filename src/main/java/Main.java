@@ -16,7 +16,7 @@ public class Main {
         int dimension = read.nextInt();
         List<Player> players = new ArrayList<>();
         players.add(new Player("Abhishek", PlayerType.HUMAN, new Symbol('X')));
-        players.add(new Bot("Jimmy", PlayerType.BOT, new Symbol('X'), BotDifficultyLevel.EASY));
+        players.add(new Bot("Jimmy", PlayerType.BOT, new Symbol('O'), BotDifficultyLevel.EASY));
 
         Game game = gameController.startGame(dimension, players);
 
